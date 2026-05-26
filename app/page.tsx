@@ -1,13 +1,21 @@
+import Image from "next/image"
 import { GiftGrid } from "@/components/GiftGrid"
+import { SparklesText } from "@/components/ui/sparkles-text"
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       {/* Nav */}
-      <nav className="border-b border-border py-4 px-6">
-        <p className="text-center text-xs font-bold tracking-[0.2em] uppercase text-foreground">
-          The Gift Forum
-        </p>
+      <nav className="border-b border-border py-4 px-6 flex justify-center">
+        <Image
+          src="/logo.png"
+          alt="The Gift Forum"
+          width={320}
+          height={80}
+          priority
+          className="h-14 w-auto"
+          style={{ mixBlendMode: "multiply" }}
+        />
       </nav>
 
       {/* Hero */}
@@ -15,12 +23,13 @@ export default function Home() {
         <p className="text-xs font-bold tracking-[0.25em] uppercase text-foreground mb-2">
           You Need
         </p>
-        <h1
-          className="text-6xl md:text-8xl leading-none mb-1"
-          style={{ fontFamily: "var(--font-provicali)", color: "#9c2235" }}
-        >
-          Gift Ideas
-        </h1>
+        <SparklesText
+          text="Gift Ideas"
+          colors={{ first: "#9c2235", second: "#9c2235" }}
+          sparklesCount={12}
+          className="text-6xl md:text-8xl leading-none mb-1 justify-center flex"
+          style={{ fontFamily: "var(--font-provicali)", color: "#9c2235", fontWeight: "normal" }}
+        />
         <p
           className="text-3xl md:text-4xl"
           style={{ fontFamily: "var(--font-birds)", color: "#262626" }}
