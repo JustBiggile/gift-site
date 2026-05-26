@@ -11,7 +11,7 @@ export default function Home() {
           className="text-xs font-black tracking-[0.2em] uppercase"
           style={{ fontFamily: "var(--font-circular)" }}
         >
-          We do the searching so you don&apos;t have to!
+          We are not selling anything, we just do the searching so you don&apos;t have to
         </p>
       </div>
 
