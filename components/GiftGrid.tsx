@@ -28,7 +28,7 @@ export function GiftGrid() {
       activeCategory === "All" ||
       gift.category === activeCategory ||
       (activeCategory.startsWith("Under") && {
-        "Under $25": 25,
+        "Under $20": 20,
         "Under $50": 50,
       }[activeCategory]! >= parseInt(gift.price.replace("$", "")))
   )})
