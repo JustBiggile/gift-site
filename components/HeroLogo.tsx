@@ -45,7 +45,7 @@ export function HeroLogo() {
           className="pointer-events-none absolute z-20"
           initial={{ opacity: 0, left: s.x, top: s.y }}
           animate={{ opacity: [0, 1, 0], scale: [0, s.scale, 0], rotate: [75, 120, 150] }}
-          transition={{ duration: 0.8, repeat: Infinity, delay: s.delay }}
+          transition={{ duration: 1.6, repeat: Infinity, delay: s.delay }}
           width="24"
           height="24"
           viewBox="0 0 21 21"
