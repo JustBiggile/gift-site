@@ -1,26 +1,6 @@
+import Image from "next/image"
 import { GiftGrid } from "@/components/GiftGrid"
 import { HeroLogo } from "@/components/HeroLogo"
-
-function StarburstBadge() {
-  return (
-    <div className="relative w-36 h-36 flex items-center justify-center">
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100">
-        <polygon
-          points="50,2 60,12 74,8 78,22 92,26 89,40 98,50 89,60 92,74 78,78 74,92 60,88 50,98 40,88 26,92 22,78 8,74 11,60 2,50 11,40 8,26 22,22 26,8 40,12"
-          fill="#f2ede6"
-          stroke="#c4a882"
-          strokeWidth="0.5"
-        />
-      </svg>
-      <p
-        className="relative z-10 text-center text-[9px] uppercase text-[#9c2235] leading-tight px-5 tracking-wide"
-        style={{ fontFamily: "var(--font-provicali)" }}
-      >
-        Because finding the right gift shouldn&apos;t be hard
-      </p>
-    </div>
-  )
-}
 
 export default function Home() {
   return (
@@ -38,7 +18,13 @@ export default function Home() {
       {/* Hero */}
       <div className="relative max-w-6xl mx-auto px-8 md:px-16 pt-40 pb-32">
         <div className="absolute top-40 right-4 md:right-10 z-10">
-          <StarburstBadge />
+          <Image
+            src="/sticker.png"
+            alt="Because finding the right gift shouldn't be hard"
+            width={180}
+            height={180}
+            style={{ mixBlendMode: "multiply" }}
+          />
         </div>
         <HeroLogo />
       </div>
