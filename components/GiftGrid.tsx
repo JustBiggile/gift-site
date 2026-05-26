@@ -20,20 +20,27 @@ export function GiftGrid() {
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-wrap gap-2 justify-center">
+      <div className="flex flex-wrap gap-2 justify-center items-end">
         {categories.map((cat) => (
-          <motion.button
-            key={cat}
-            onClick={() => setActiveCategory(cat)}
-            whileTap={{ scale: 0.95 }}
-            className={`px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase border transition-colors ${
-              activeCategory === cat
-                ? "bg-[#9c2235] text-[#f9f6f2] border-[#9c2235]"
-                : "bg-transparent text-[#262626] border-[#262626] hover:bg-[#262626]/5"
-            }`}
-          >
-            {cat}
-          </motion.button>
+          <div key={cat} className="flex flex-col items-center gap-0.5">
+            <span
+              className="text-[#9c2235] text-base leading-none transition-opacity duration-200"
+              style={{ visibility: cat === "All" ? "visible" : "hidden", opacity: activeCategory === "All" && cat === "All" ? 1 : 0 }}
+            >
+              ★
+            </span>
+            <motion.button
+              onClick={() => setActiveCategory(cat)}
+              whileTap={{ scale: 0.95 }}
+              className={`px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase border transition-colors ${
+                activeCategory === cat
+                  ? "bg-[#9c2235] text-[#f9f6f2] border-[#9c2235]"
+                  : "bg-transparent text-[#262626] border-[#262626] hover:bg-[#262626]/5"
+              }`}
+            >
+              {cat}
+            </motion.button>
+          </div>
         ))}
       </div>
 

@@ -1,49 +1,40 @@
-import Image from "next/image"
 import { GiftGrid } from "@/components/GiftGrid"
-import { SparklesText } from "@/components/ui/sparkles-text"
+import { HeroLogo } from "@/components/HeroLogo"
+
+function StarburstBadge() {
+  return (
+    <div className="relative w-36 h-36 flex items-center justify-center">
+      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100">
+        <polygon
+          points="50,2 60,12 74,8 78,22 92,26 89,40 98,50 89,60 92,74 78,78 74,92 60,88 50,98 40,88 26,92 22,78 8,74 11,60 2,50 11,40 8,26 22,22 26,8 40,12"
+          fill="#f2ede6"
+          stroke="#c4a882"
+          strokeWidth="0.5"
+        />
+      </svg>
+      <p className="relative z-10 text-center text-[8px] font-black uppercase text-[#9c2235] leading-tight px-5 tracking-wide">
+        Because finding the right gift shouldn&apos;t be hard
+      </p>
+    </div>
+  )
+}
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
-      {/* Nav */}
-      <nav className="border-b border-border py-4 px-6 flex justify-center">
-        <Image
-          src="/logo.png"
-          alt="The Gift Forum"
-          width={320}
-          height={80}
-          priority
-          className="h-14 w-auto"
-          style={{ mixBlendMode: "multiply" }}
-        />
-      </nav>
+      {/* Announcement bar */}
+      <div className="bg-[#9c2235] text-[#f9f6f2] py-2.5 px-4 text-center">
+        <p className="text-xs font-bold tracking-[0.2em] uppercase">
+          We do the searching so you don&apos;t have to!
+        </p>
+      </div>
 
       {/* Hero */}
-      <div className="max-w-6xl mx-auto px-4 pt-16 pb-12 text-center">
-        <p className="text-xs font-bold tracking-[0.25em] uppercase text-foreground mb-2">
-          You Need
-        </p>
-        <SparklesText
-          text="Gift Ideas"
-          colors={{ first: "#9c2235", second: "#9c2235" }}
-          sparklesCount={12}
-          className="text-6xl md:text-8xl leading-none mb-1 justify-center flex"
-          style={{ fontFamily: "var(--font-provicali)", color: "#9c2235", fontWeight: "normal" }}
-        />
-        <p
-          className="text-3xl md:text-4xl"
-          style={{ fontFamily: "var(--font-birds)", color: "#262626" }}
-        >
-          for every person &amp; every budget
-        </p>
-
-        <div className="mt-8 inline-flex items-center gap-2 border border-foreground rounded-full px-6 py-2">
-          <span className="text-base">✦</span>
-          <span className="text-xs font-bold tracking-[0.2em] uppercase">
-            The Gift Forum Is Here For You
-          </span>
-          <span className="text-base">✦</span>
+      <div className="relative max-w-6xl mx-auto px-4 pt-6 pb-2">
+        <div className="absolute top-6 right-4 md:right-8 z-10">
+          <StarburstBadge />
         </div>
+        <HeroLogo />
       </div>
 
       {/* Grid */}
