@@ -16,7 +16,7 @@ export default function Home() {
       </div>
 
       {/* Hero */}
-      <div className="relative max-w-6xl mx-auto px-8 md:px-16 pt-40 pb-32">
+      <div className="relative max-w-6xl mx-auto px-8 md:px-16 pt-28 pb-20">
         <div className="absolute top-28 -right-4 md:-right-2 z-10">
           <Image
             src="/sticker.png"
