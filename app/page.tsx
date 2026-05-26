@@ -36,8 +36,8 @@ export default function Home() {
       </div>
 
       {/* Hero */}
-      <div className="relative max-w-6xl mx-auto px-8 md:px-16 pt-10 pb-4">
-        <div className="absolute top-10 right-4 md:right-10 z-10">
+      <div className="relative max-w-6xl mx-auto px-8 md:px-16 pt-20 pb-16">
+        <div className="absolute top-20 right-4 md:right-10 z-10">
           <StarburstBadge />
         </div>
         <HeroLogo />

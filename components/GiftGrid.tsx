@@ -32,6 +32,7 @@ export function GiftGrid() {
             <motion.button
               onClick={() => setActiveCategory(cat)}
               whileTap={{ scale: 0.95 }}
+              style={{ fontFamily: "var(--font-circular)" }}
               className={`px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase border transition-colors ${
                 activeCategory === cat
                   ? "bg-[#9c2235] text-[#f9f6f2] border-[#9c2235]"
