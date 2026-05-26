@@ -8,7 +8,7 @@ export default function Home() {
       {/* Announcement bar */}
       <div className="bg-[#9c2235] text-[#f9f6f2] py-3 px-4 text-center">
         <p
-          className="text-xs font-bold tracking-[0.2em] uppercase"
+          className="text-xs font-black tracking-[0.2em] uppercase"
           style={{ fontFamily: "var(--font-circular)" }}
         >
           We do the searching so you don&apos;t have to!
