@@ -25,7 +25,7 @@ export function GiftGrid() {
           <div key={cat} className="flex flex-col items-center gap-0.5">
             <span
               className="text-[#9c2235] text-base leading-none transition-opacity duration-200"
-              style={{ visibility: cat === "All" ? "visible" : "hidden", opacity: activeCategory === "All" && cat === "All" ? 1 : 0 }}
+              style={{ opacity: activeCategory === cat ? 1 : 0 }}
             >
               ★
             </span>

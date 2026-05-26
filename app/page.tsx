@@ -12,7 +12,10 @@ function StarburstBadge() {
           strokeWidth="0.5"
         />
       </svg>
-      <p className="relative z-10 text-center text-[8px] font-black uppercase text-[#9c2235] leading-tight px-5 tracking-wide">
+      <p
+        className="relative z-10 text-center text-[9px] uppercase text-[#9c2235] leading-tight px-5 tracking-wide"
+        style={{ fontFamily: "var(--font-provicali)" }}
+      >
         Because finding the right gift shouldn&apos;t be hard
       </p>
     </div>
@@ -23,15 +26,18 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       {/* Announcement bar */}
-      <div className="bg-[#9c2235] text-[#f9f6f2] py-2.5 px-4 text-center">
-        <p className="text-xs font-bold tracking-[0.2em] uppercase">
+      <div className="bg-[#9c2235] text-[#f9f6f2] py-3 px-4 text-center">
+        <p
+          className="text-xs font-bold tracking-[0.2em] uppercase"
+          style={{ fontFamily: "var(--font-circular)" }}
+        >
           We do the searching so you don&apos;t have to!
         </p>
       </div>
 
       {/* Hero */}
-      <div className="relative max-w-6xl mx-auto px-4 pt-6 pb-2">
-        <div className="absolute top-6 right-4 md:right-8 z-10">
+      <div className="relative max-w-6xl mx-auto px-8 md:px-16 pt-10 pb-4">
+        <div className="absolute top-10 right-4 md:right-10 z-10">
           <StarburstBadge />
         </div>
         <HeroLogo />
