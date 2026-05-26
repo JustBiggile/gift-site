@@ -34,9 +34,6 @@ export default function Home() {
         <GiftGrid />
       </div>
 
-      <footer className="border-t border-border py-6 text-center text-xs tracking-wide text-muted-foreground">
-        Some links are affiliate links — I may earn a small commission at no extra cost to you.
-      </footer>
     </main>
   )
 }
