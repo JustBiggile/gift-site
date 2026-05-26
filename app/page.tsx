@@ -22,7 +22,7 @@ export default function Home() {
             src="/sticker.png"
             alt="Because finding the right gift shouldn't be hard"
             width={140}
-            height={100}
+            height={70}
             style={{ mixBlendMode: "multiply" }}
           />
         </div>
