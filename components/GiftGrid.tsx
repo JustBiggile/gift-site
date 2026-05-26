@@ -2,45 +2,24 @@
 
 import { useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
-import { Search } from "lucide-react"
-import { Input } from "@/components/ui/input"
 import { GiftCard } from "@/components/GiftCard"
 import { categories, gifts } from "@/data/gifts"
 
 export function GiftGrid() {
   const [activeCategory, setActiveCategory] = useState("All")
-  const [search, setSearch] = useState("")
 
   const filtered = gifts.filter((gift) => {
-    const matchesCategory =
+    return (
       activeCategory === "All" ||
       gift.category === activeCategory ||
       (activeCategory.startsWith("Under") && {
         "Under $25": 25,
         "Under $50": 50,
       }[activeCategory]! >= parseInt(gift.price.replace("$", "")))
-
-    const matchesSearch =
-      search === "" ||
-      gift.name.toLowerCase().includes(search.toLowerCase()) ||
-      gift.description.toLowerCase().includes(search.toLowerCase()) ||
-      gift.tags.some((t) => t.toLowerCase().includes(search.toLowerCase()))
-
-    return matchesCategory && matchesSearch
-  })
+  )})
 
   return (
     <div className="space-y-6">
-      <div className="relative max-w-md mx-auto">
-        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-        <Input
-          placeholder="Search gifts..."
-          className="pl-9"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-      </div>
-
       <div className="flex flex-wrap gap-2 justify-center">
         {categories.map((cat) => (
           <motion.button
