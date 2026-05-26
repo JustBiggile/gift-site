@@ -17,12 +17,12 @@ export default function Home() {
 
       {/* Hero */}
       <div className="relative max-w-6xl mx-auto px-8 md:px-16 pt-40 pb-32">
-        <div className="absolute top-40 right-4 md:right-10 z-10">
+        <div className="absolute top-28 -right-4 md:-right-2 z-10">
           <Image
             src="/sticker.png"
             alt="Because finding the right gift shouldn't be hard"
-            width={180}
-            height={180}
+            width={140}
+            height={140}
             style={{ mixBlendMode: "multiply" }}
           />
         </div>
