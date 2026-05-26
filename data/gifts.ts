@@ -9,7 +9,8 @@ export type Gift = {
   affiliateUrl: string
 }
 
-export const categories = ["All", "For Her", "For Him", "For Kids", "Under $25", "Under $50", "Tech", "Home", "Self Care"]
+export const categories = ["All", "For Her", "For Him", "For Kids", "Under $25", "Under $50", "Tech", "Home"]
+export const extraCategories = ["Self Care"]
 
 export const gifts: Gift[] = [
   {
