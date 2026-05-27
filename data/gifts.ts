@@ -20,7 +20,7 @@ export const gifts: Gift[] = [
     price: "$37",
     category: "For Her, Under $50",
     tags: ["wellness", "selfcare", "that girl"],
-    image: "https://amzn.to/4fJeFNv",
+    image: "https://m.media-amazon.com/images/G/15/apparel/rcxgs/tile._CB483369412_.gif",
     affiliateUrl: "https://amzn.to/4fJeFNv",
   },
   {
