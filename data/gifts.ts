@@ -15,13 +15,13 @@ export const extraCategories = ["Mother's Day", "Father's Day", "Boo Basket", "B
 export const gifts: Gift[] = [
   {
     id: "1",
-    name: "Cozy Knit Blanket",
-    description: "Ultra-soft chunky knit throw perfect for chilly evenings. Comes in 12 colors.",
-    price: "$45",
-    category: "For Her",
-    tags: ["cozy", "home", "winter"],
-    image: "https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=400&h=300&fit=crop",
-    affiliateUrl: "https://example.com/affiliate/blanket",
+    name: "Nuda Self Tan Kit",
+    description: "Includes Self Tanner Mitt, 50mL Dark BronzeFoam Tanning Mousse, & 5mL CloudMist Face Tanner",
+    price: "$37",
+    category: "For Her, Under $50",
+    tags: ["wellness", "selfcare", "that girl"],
+    image: "https://amzn.to/4fJeFNv",
+    affiliateUrl: "https://amzn.to/4fJeFNv",
   },
   {
     id: "2",
