@@ -20,7 +20,7 @@ export const gifts: Gift[] = [
     price: "$37",
     category: "For Her, Under $50",
     tags: ["wellness", "selfcare", "that girl"],
-    image: "https://imgur.com/a/1CEmmqD",
+    image: "https://i.imgur.com/QnItnnK.png",
     affiliateUrl: "https://amzn.to/4fJeFNv",
   },
   {
@@ -30,7 +30,7 @@ export const gifts: Gift[] = [
     price: "$60",
     category: "For Her",
     tags: ["Massage", "Relaxation", "Self Care"],
-    image: "https://imgur.com/a/Dleaa29",
+    image: "https://i.imgur.com/MizYdhN.png",
     affiliateUrl: "https://amzn.to/4o2qWyL",
   },
   {
@@ -40,7 +40,7 @@ export const gifts: Gift[] = [
     price: "$20",
     category: "For Him, Under $20, Gift Exchange",
     tags: ["Hiking", "Everyday", "Plastic Free"],
-    image: "https://imgur.com/a/ujdLOtO",
+    image: "https://i.imgur.com/l3kVmvN.png",
     affiliateUrl: "https://amzn.to/4fdcFNj",
   },
   {
