@@ -26,7 +26,7 @@ export function GiftGrid() {
   const filtered = gifts.filter((gift) => {
     return (
       activeCategory === "All" ||
-      gift.category === activeCategory ||
+      gift.category.split(", ").includes(activeCategory) ||
       (activeCategory.startsWith("Under") && {
         "Under $20": 20,
         "Under $50": 50,
