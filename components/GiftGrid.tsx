@@ -53,7 +53,7 @@ export function GiftGrid() {
               onClick={() => setActiveCategory(cat)}
               whileTap={{ scale: 0.95 }}
               style={{ fontFamily: "var(--font-circular)" }}
-              className={`px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase border transition-colors ${
+              className={`px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase border transition-colors whitespace-nowrap ${
                 activeCategory === cat
                   ? "bg-[#9c2235] text-[#f9f6f2] border-[#9c2235]"
                   : "bg-transparent text-[#262626] border-[#262626] hover:bg-[#262626]/5"
