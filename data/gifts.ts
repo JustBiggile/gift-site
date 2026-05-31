@@ -9,12 +9,12 @@ export type Gift = {
   affiliateUrl: string
 }
 
-export const categories = ["All", "For Her", "For Him", "Under $20", "Under $50", "Gift Exchange", "For the Foodie"]
-export const extraCategories = ["Mother's Day", "Father's Day", "Boo Basket", "Brrr Basket", "The One Who Has Everything"]
+export const categories = ["All", "For Her", "For Him", "Under $20", "Under $50", "Gift Exchange"]
+export const extraCategories = ["Mother's Day", "Father's Day"]
 
 export const gifts: Gift[] = [
   {
-    id: "9",
+    id: "1",
     name: "Aperitif - The Cocktail Cabinet",
     description: "The essential recipes every apperitif lovers should know",
     price: "$34",
@@ -24,7 +24,7 @@ export const gifts: Gift[] = [
     affiliateUrl: "https://amzn.to/3RvWCk2",
   },
   {
-    id: "11",
+    id: "2",
     name: "Owala FreeSip Water Bottle",
     description: "Insulated stainless steel water bottle with built-in straw and wide mouth, keeps drinks cold for 24 hours",
     price: "$42",
@@ -34,7 +34,7 @@ export const gifts: Gift[] = [
     affiliateUrl: "https://amzn.to/4u4eX5e",
   },
   {
-    id: "12",
+    id: "3",
     name: "Apple AirTag (2nd Generation)",
     description: "Precision item tracker, works with iPhone to help find your keys, wallet, luggage and more",
     price: "$39",
@@ -48,7 +48,7 @@ export const gifts: Gift[] = [
     name: "Kodak 35mm Disposable Camera",
     description: "The perfect gift if you're going on a trip or about to start summer",
     price: "$35",
-    category: "Under $50, For Her, Gift Exchange",
+    category: "For Her, Gift Exchange",
     tags: ["Memories", "Vintage Look", "Photography"],
     image: "https://i.imgur.com/6eeYARW.png",
     affiliateUrl: "https://amzn.to/4dQAecm",
@@ -98,7 +98,7 @@ export const gifts: Gift[] = [
     name: "Nuda Self Tan Kit",
     description: "Includes Self Tanner Mitt, 50mL Dark BronzeFoam Tanning Mousse, & 5mL CloudMist Face Tanner",
     price: "$37",
-    category: "For Her, Under $50",
+    category: "For Her",
     tags: ["Wellness", "Selfcare", "That Girl"],
     image: "https://i.imgur.com/QnItnnK.png",
     affiliateUrl: "https://amzn.to/4fJeFNv",
@@ -128,7 +128,7 @@ export const gifts: Gift[] = [
     name: "Nalgene 32 oz Water Bottle",
     description: "Narrow Mouth, BPA Free, Durable & Leak Proof, Lightweight for Hiking & Gym",
     price: "$20",
-    category: "For Him, Under $20, Gift Exchange",
+    category: "For Him, Gift Exchange",
     tags: ["Hiking", "Everyday", "Plastic Free"],
     image: "https://i.imgur.com/l3kVmvN.png",
     affiliateUrl: "https://amzn.to/4fdcFNj",
@@ -160,7 +160,7 @@ export const gifts: Gift[] = [
     price: "$20",
     category: "For Her, For Him, Gift Exchange",
     tags: ["Puzzles", "Mystery", "Fun"],
-    image: "",
+    image: "https://i.imgur.com/nWTXhUH.png",
     affiliateUrl: "https://amzn.to/3Rvdtn7",
   },
 ]
