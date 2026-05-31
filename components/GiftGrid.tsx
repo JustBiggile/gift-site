@@ -37,7 +37,7 @@ export function GiftGrid() {
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-wrap gap-2 justify-center items-end">
+      <div className="flex flex-nowrap overflow-x-auto sm:flex-wrap gap-2 justify-center items-end px-2 sm:px-0 scrollbar-hide">
         {categories.map((cat) => (
           <div
             key={cat}
