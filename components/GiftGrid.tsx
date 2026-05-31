@@ -37,7 +37,7 @@ export function GiftGrid() {
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-nowrap overflow-x-auto sm:flex-wrap gap-2 justify-center items-end px-2 sm:px-0 scrollbar-hide">
+      <div className="flex flex-nowrap sm:flex-wrap gap-1.5 justify-center items-end">
         {categories.map((cat) => (
           <div
             key={cat}
@@ -53,7 +53,7 @@ export function GiftGrid() {
               onClick={() => setActiveCategory(cat)}
               whileTap={{ scale: 0.95 }}
               style={{ fontFamily: "var(--font-circular)" }}
-              className={`px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase border transition-colors whitespace-nowrap ${
+              className={`px-2.5 sm:px-4 py-1.5 rounded-full text-[10px] sm:text-xs font-bold tracking-wide sm:tracking-widest uppercase border transition-colors whitespace-nowrap ${
                 activeCategory === cat
                   ? "bg-[#9c2235] text-[#f9f6f2] border-[#9c2235]"
                   : "bg-transparent text-[#262626] border-[#262626] hover:bg-[#262626]/5"
